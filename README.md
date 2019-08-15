@@ -1,2 +1,2 @@
 # chat
-chat serer whit socket io
+chat server - socket io
