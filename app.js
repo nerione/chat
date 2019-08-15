@@ -14,6 +14,12 @@ var express = require('express'),
     userRol=['Ajustador','Operador'],
     userNames = ['Juan', 'Pedro', 'Carlos', 'Antonio', 'Damian', 'Raúl', 'Jimena', 'Daniel'],
     properties = propertiesReader(`${__dirname}/public/properties/app.properties`),
+    //port = process.env.PORT || properties.get('configuration.app.server.port'),
+    
+    // when on Heroku, port will be exported to an environment variable
+    // and available as process.env.PORT
+    port = process.env.PORT || CONFIG.port;
+    
     port = process.env.PORT || properties.get('configuration.app.server.port'),
     //indiceRol = 0,
     indiceAssgin = 0,
