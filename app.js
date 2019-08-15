@@ -18,9 +18,9 @@ var express = require('express'),
     
     // when on Heroku, port will be exported to an environment variable
     // and available as process.env.PORT
-    port = process.env.PORT || CONFIG.port;
+    port = process.env.PORT || CONFIG.port,
     
-    port = process.env.PORT || properties.get('configuration.app.server.port'),
+    //port = process.env.PORT || properties.get('configuration.app.server.port'),
     //indiceRol = 0,
     indiceAssgin = 0,
     //Lista de canales por tipo de usuario
